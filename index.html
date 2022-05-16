@@ -1,393 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="images/logo.png" />
     <title>oFruit Tienda</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!------------------- Navegacion------------------->
     <nav class="navigation">
-        <!--Logo-->
-        <a href="#" class="logo">
-            <span>o</span>Fruit
+      <!--Logo-->
+      <a href="#" class="logo"> <span>o</span>Fruit </a>
+      <!-- MENU-BOTON -->
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <!--Menu-->
+      <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Batidos</a></li>
+        <li><a href="#">App</a></li>
+      </ul>
+
+      <!--Carrito-like-->
+      <div class="right-nav">
+        <a href="#" class="like">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span>0</span>
         </a>
 
-        <!--Menu-->
-        <ul class="menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Paquetes</a></li>
-            <li><a href="#">App</a></li>
-        </ul>
-
-        <!--Carrito-like-->
-        <div class="right-nav">
-            <a href="#" class="like">
-                <ion-icon name="heart-outline"></ion-icon>
-                <span>0</span>
-            </a>
-
-            <a href="#" class="cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                <span>0</span>
-            </a>
-        </div>
-
+        <a href="#" class="cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span>0</span>
+        </a>
+      </div>
     </nav>
     <!------------------- Navegacion Fin------------------->
 
     <!------------------- Buscador y banner------------------->
     <section id="search-banner">
-        <img src="images/bg-1.png" class="bg-1" alt="">
-        <img src="images/bg-2.png" class="bg-2" alt="">
+      <img data-aos="zoom-in" src="images/bg-1.png" class="bg-1" alt="" />
+      <img  data-aos="zoom-in" src="images/bg-2.png" class="bg-2" alt="" />
 
-        <!--Texto-->
-        <div class="search-banner-text">
-            <h1>Ordená tus Frutas Orgánicas</h1>
-            <strong>#Envìo Gratis</strong>
+      <!--Texto-->
+      <div class="search-banner-text">
+        <h1>Ordená tus Batidos Orgánicos</h1>
+        <strong>#Envìo Gratis</strong>
 
-            <!--Bsucador-->
-            <form action="" class="search">
-                <ion-icon name="search-outline"></ion-icon>
-                <input type="text" class="search-input" placeholder="Busca tus frutas favoritas" name="search"
-                    autocomplete="off" required>
-                <input type="submit" class="search-btn" value="Search">
-            </form>
-        </div>
+        <!--Bsucador-->
+        <form action="" class="search">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Busca tus frutas favoritas"
+            name="search"
+            autocomplete="off"
+            required
+          />
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
     </section>
     <!------------------- Buscador y banner Fin------------------->
 
     <!------------------- Categorias------------------->
     <section id="category">
-        <div class="category-name">
-            <h2>Categorias</h2>
-        </div>
-        <div class="category-container">
-
-            <a href="" class="category-box">
-                <img src="images/fresa.png" alt="">
-                <span>Frutilla</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/grosella.png" alt="">
-                <span>Uva</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/manzana.png" alt="">
-                <span>Manzana</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/naranja.png" alt="">
-                <span>Naranja</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/platano.png" alt="">
-                <span>Banana</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/kiwi.png" alt="">
-                <span>Kiwi</span>
-            </a>
-            <a href="" class="category-box">
-                <img src="images/sandia.png" alt="">
-                <span>Sandia</span>
-            </a>
-        </div>
-
+      <div class="category-name">
+        <h2>Categorias</h2>
+      </div>
+      <div class="category-container">
+        <a href="" class="category-box">
+          <img src="images/Category.png" alt="" />
+          <span>Dulces</span>
+        </a>
+        <a href="" class="category-box">
+          <img src="images/Category.png" alt="" />
+          <span>Cítricos</span>
+        </a>
+        <a href="" class="category-box">
+          <img src="images/Category.png" alt="" />
+          <span>Detox</span>
+        </a>
+        <a href="" class="category-box">
+          <img src="images/Category.png" alt="" />
+          <span>Dulce y Ácido</span>
+        </a>
+       
+        
+      </div>
     </section>
     <!------------------- Categorias Fin------------------->
 
-    <!------------------- Productos populares------------------->
+   
 
-    <section id="popular-product">
-        <div class="title-product">
-            <h3>Productos Populares</h3>
-        </div>
-
-
-        <!------------------- Contenedor de productos------------------->
-        <div class="product-container">
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/manzanaa.png" alt="">
-                <strong>Manzana</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$150</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/papaya.png" alt="">
-                <strong>Papaya</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$500</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/bananaa.png" alt="">
-                <strong>Banana</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$250</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/cherry.png" alt="">
-                <strong>Cereza</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$400</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/anana.png" alt="">
-                <strong>Anana</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$350</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/productos/sandiaa.png" alt="">
-                <strong>Sandia</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$280</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-        </div>
-
-    </section>
-    <!------------------- Productos populares Fin------------------->
-
-    <!------------------- Packs ------------------->
+    <!------------------- PRODUCTOS ------------------->
     <section id="paquetes">
-        <div class="title-product">
-            <h3>Packs Populares</h3>
+      <!-- PRODUCTO 1 -->
+      <div class="title">
+        <h2>Productos</h2>
+      </div>
+      <div class="product-container"> <!-- PRODUCT-CONTAINER -->
+        <div class="container">
+          <div class="element">
+            <div class="front">
+              <img src="/images/productos/batido-1.png" alt="">
+            </div>
+            <div class="back">
+              <div class="back-content">
+                <div class="description">
+                 <strong>Ingredientes:</strong> 
+                 <br>
+                 Agua, Limón, Ananá, Jengibre, Menta
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="price-name">
+              <strong>Batido Cítrico</strong>
+            <span class="quantity">500ml</span>
+            <span class="price">$2100</span>
+            <a href="" class="carrito">
+              <ion-icon name="cart-outline"></ion-icon>Add To Cart
+            </a>
+            <a href="" class="megusta">
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+            </div>
+          </div>
+     
+      
+
+        <!-- PRODUCTO 2 -->
+
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="images/productos/batido-2.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+               <strong>Ingredientes:</strong> 
+               <br>
+               Leche, Frutilla, Almendras, Chia, Arandanos 
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!--Box pack-->
-        <div class="product-container">
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/grande.png" alt="">
-                <strong>Pack Grande</strong>
-                <span class="quantity">5 KG</span>
-                <span class="price">$2100</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/mediana.png" alt="">
-                <strong>Pack Mediano</strong>
-                <span class="quantity">3 KG</span>
-                <span class="price">$1500</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/chica.png" alt="">
-                <strong>Pack Chico</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$800</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/grande.png" alt="">
-                <strong>Pack Grande</strong>
-                <span class="quantity">5 KG</span>
-                <span class="price">$2100</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/mediana.png" alt="">
-                <strong>Pack Mediano</strong>
-                <span class="quantity">3 KG</span>
-                <span class="price">$1500</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!--Box-->
-            <div class="product-box">
-                <img src="images/chica.png" alt="">
-                <strong>Pack Chico</strong>
-                <span class="quantity">1 KG</span>
-                <span class="price">$800</span>
-                <a href="" class="carrito">
-                    <ion-icon name="cart-outline"></ion-icon>Add To Cart
-                </a>
-                <a href="" class="megusta">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </a>
-            </div>
+	    <div class="price-name">
+            <strong>Batido Frutilla</strong>
+          <span class="quantity">500ml</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+          </div>
         </div>
+        <!-- PRODUCTO 3 -->
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="/images/productos/batido-3.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+               <strong>Ingredientes:</strong> 
+               <br>
+               Leche, Almendras, Canela, Zapallo, Naranja
+              </div>
+            </div>
+          </div>
+        </div>
+	    <div class="price-name">
+            <strong>Batido Naranja</strong>
+          <span class="quantity">500ml</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+          </div>
+        </div>
+        <!-- PRODUCTO 4 -->
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="/images/productos/batido-4.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+               <strong>Ingredientes:</strong> 
+               <br>
+               Agua, Pepino, Manzana Verde
+              </div>
+            </div>
+          </div>
+        </div>
+	    <div class="price-name">
+            <strong>Batido Verde</strong>
+          <span class="quantity">500ml</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+          </div>
+        </div>
+        <!-- PRODUCTO 5 -->
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="/images/productos/batido-5.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+               <strong>Ingredientes:</strong> 
+               <br>
+               Agua, Naranja, Lima, Chia
+              </div>
+            </div>
+          </div>
+        </div>
+	    <div class="price-name">
+            <strong>Batido Naranja</strong>
+          <span class="quantity">500ml</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+          </div>
+        </div>
+        <!-- PRODUCTO 6 -->
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="/images/productos/batido-6.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+               <strong>Ingredientes:</strong> 
+               <br>
+               Agua, Ananá, Remolacha,Jengibre
+              </div>
+            </div>
+          </div>
+        </div>
+	    <div class="price-name">
+            <strong>Pack Grande</strong>
+          <span class="quantity">5 KG</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+          </div>
+        </div>
+      </div> <!-- FIN PRODUCTO-CONTAINER -->
     </section>
 
     <!--Marcas Seccion-->
 
     <section id="marcas">
-        <div class="title-princ">
-            <h3>Nuestras Marcas</h3>
-        </div>
+      <div class="title-princ">
+        <h3>Nuestras Marcas</h3>
+      </div>
 
-        <div class="logo-cont">
-            <img src="images/logo-1.png" alt="">
-            <img src="images/logo-2.png" alt="">
-            <img src="images/logo-3.png" alt="">
-            <img src="images/logo-4.png" alt="">
-            <img src="images/logo-5.png" alt="">
-        </div>
-
+      <div class="logo-cont">
+        <img src="images/logo-1.png" alt="" />
+        <img src="images/logo-2.png" alt="" />
+        <img src="images/logo-3.jpg" alt="" />
+        <img src="images/logo-4.png" alt="" />
+        <img src="images/logo-5.png" alt="" />
+      </div>
     </section>
     <!--Marcas Seccion fin-->
 
     <!--APP Seccion-->
 
     <section id="app">
-        <div class="app-image">
-            <img src="images/app-img.png" alt="">
+      <div class="app-image">
+        <img src="images/app-img.png" alt="" />
+      </div>
+      <div class="app-texto">
+        <strong>Descargar App</strong>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+          corporis consequuntur labore magni odio, nam ipsa autem praesentium
+          eligendi, nobis nihil id incidunt vero porro eos veritatis minima a
+          blanditiis.
+        </p>
+        <div class="botones">
+          <a href="#"><img src="images/googleplay-btn.png" alt="" /></a>
+          <a href="#"><img src="images/appstore-btn.png" alt="" /></a>
         </div>
-        <div class="app-texto">
-            <strong>Descargar App</strong>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corporis consequuntur labore magni odio,
-                nam ipsa autem praesentium eligendi, nobis nihil id incidunt vero porro eos veritatis minima a
-                blanditiis.</p>
-            <div class="botones">
-                <a href="#"><img src="images/googleplay-btn.png" alt=""></a>
-                <a href="#"><img src="images/appstore-btn.png" alt=""></a>
-            </div>
-        </div>
-
+      </div>
     </section>
 
     <!--APP Seccion fin-->
 
     <!--Footer-->
     <footer>
-        <div class="footer-cont">
-            <div class="footer-logo">
-                <a href="#"><span>o</span>Fruit</a>
+      <div class="footer-cont">
+        <div class="footer-logo">
+          <a href="#"><span>o</span>Fruit</a>
 
-                <!--Redes-->
-                <div class="footer-redes">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-                </div>
-            </div>
-
-             <!--Nav-->
-             <div class="footer-nav">
-                 <strong>Productos</strong>
-                <ul>
-                    <li><a href="#">Nuevos</a></li>
-                    <li><a href="#">Populares</a></li>
-                    <li><a href="#">Paquetes</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-
-            <div class="footer-nav">
-                <strong>Categorias</strong>
-               <ul>
-                   <li><a href="#">Dulces</a></li>
-                   <li><a href="#">SemiDulces</a></li>
-                   <li><a href="#">Ácidas</a></li>
-                   <li><a href="#">SemiÁcidas</a></li>
-               </ul>
-           </div>
-
-           <div class="footer-nav">
-            <strong>Contacto</strong>
-           <ul>
-               <li><a href="#">WhatsApp : +123456789</a></li>
-               <li><a href="#">Mail : ejemplo@hotmail.com</a></li>
-               
-           </ul>
-       </div>
+          <!--Redes-->
+          <div class="footer-redes">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
         </div>
+
+        <!--Nav-->
+        <div class="footer-nav">
+          <strong>Productos</strong>
+          <ul>
+            <li><a href="#">Nuevos</a></li>
+            <li><a href="#">Populares</a></li>
+            <li><a href="#">Paquetes</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <strong>Categorias</strong>
+          <ul>
+            <li><a href="#">Dulces</a></li>
+            <li><a href="#">Detox</a></li>
+            <li><a href="#">Cítricos</a></li>
+            <li><a href="#">Dulce y ácido</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <strong>Contacto</strong>
+          <ul>
+            <li><a href="#">WhatsApp : +123456789</a></li>
+            <li><a href="#">Mail : ejemplo@hotmail.com</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
