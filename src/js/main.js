@@ -1,3 +1,6 @@
+import "../css/main.css";
+
+
 TweenMax.staggerFrom(".logo",1.6,{
     delay:0.2,
     opacity :0,
