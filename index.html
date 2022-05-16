@@ -1,142 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" href="images/logo.png" />
-    <title>oFruit Tienda</title>
-  </head>
 
-  <body>
-    <!------------------- Navegacion------------------->
-    <nav class="navigation">
-      <!--Logo-->
-      <a href="#" class="logo"> <span>o</span>Fruit </a>
-      <!-- MENU-BOTON -->
-      <input type="checkbox" class="menu-btn" id="menu-btn">
-      <label for="menu-btn" class="menu-icon">
-        <span class="nav-icon"></span>
-      </label>
-      <!--Menu-->
-      <ul class="menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Batidos</a></li>
-        <li><a href="#">App</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link rel="icon" href="images/logo.png" />
+  <title>oFruit Tienda</title>
+</head>
 
-      <!--Carrito-like-->
-      <div class="right-nav">
-        <a href="#" class="like">
-          <ion-icon name="heart-outline"></ion-icon>
-          <span>0</span>
-        </a>
+<body>
+  <!------------------- Navegacion------------------->
+  <nav class="navigation">
+    <!--Logo-->
+    <a href="#" class="logo"> <span>o</span>Fruit </a>
+    <!-- MENU-BOTON -->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+    </label>
+    <!--Menu-->
+    <ul class="menu">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#category">Categorias</a></li>
+      <li><a href="#paquetes">Batidos</a></li>
+      <li><a href="#app">App</a></li>
+    </ul>
 
-        <a href="#" class="cart">
-          <ion-icon name="cart-outline"></ion-icon>
-          <span>0</span>
-        </a>
-      </div>
-    </nav>
-    <!------------------- Navegacion Fin------------------->
+    <!--Carrito-like-->
+    <div class="right-nav">
+      <a href="#" class="like">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span>0</span>
+      </a>
 
-    <!------------------- Buscador y banner------------------->
-    <section id="search-banner">
-      <img data-aos="zoom-in" src="images/bg-1.png" class="bg-1" alt="" />
-      <img  data-aos="zoom-in" src="images/bg-2.png" class="bg-2" alt="" />
+      <a href="#" class="cart">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span>0</span>
+      </a>
+    </div>
+  </nav>
+  <!------------------- Navegacion Fin------------------->
 
-      <!--Texto-->
-      <div class="search-banner-text">
-        <h1>Ordená tus Batidos Orgánicos</h1>
-        <strong>#Envìo Gratis</strong>
+  <!------------------- Buscador y banner------------------->
+  <section id="search-banner">
+    <img data-aos="zoom-in" src="images/bg-1.png" class="bg-1" alt="" />
+    <img data-aos="zoom-in" src="images/bg-2.png" class="bg-2" alt="" />
 
-        <!--Bsucador-->
-        <form action="" class="search">
-          <ion-icon name="search-outline"></ion-icon>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Busca tus frutas favoritas"
-            name="search"
-            autocomplete="off"
-            required
-          />
-          <input type="submit" class="search-btn" value="Search" />
-        </form>
-      </div>
-    </section>
-    <!------------------- Buscador y banner Fin------------------->
+    <!--Texto-->
+    <div class="search-banner-text">
+      <h1>Ordená tus Batidos Orgánicos</h1>
+      <strong>#Envìo Gratis</strong>
 
-    <!------------------- Categorias------------------->
-    <section id="category">
-      <div class="category-name">
-        <h2>Categorias</h2>
-      </div>
-      <div class="category-container">
-        <a href="" class="category-box">
-          <img src="images/Category.png" alt="" />
-          <span>Dulces</span>
-        </a>
-        <a href="" class="category-box">
-          <img src="images/Category.png" alt="" />
-          <span>Cítricos</span>
-        </a>
-        <a href="" class="category-box">
-          <img src="images/Category.png" alt="" />
-          <span>Detox</span>
-        </a>
-        <a href="" class="category-box">
-          <img src="images/Category.png" alt="" />
-          <span>Dulce y Ácido</span>
-        </a>
-       
-        
-      </div>
-    </section>
-    <!------------------- Categorias Fin------------------->
+      <!--Bsucador-->
+      <form action="" class="search">
+        <ion-icon name="search-outline"></ion-icon>
+        <input type="text" class="search-input" placeholder="Busca tus frutas favoritas" name="search"
+          autocomplete="off" required />
+        <input type="submit" class="search-btn" value="Search" />
+      </form>
+    </div>
+  </section>
+  <!------------------- Buscador y banner Fin------------------->
 
-   
+  <!------------------- Categorias------------------->
+  <section id="category">
+    <div class="category-name" data-aos="fade-right">
+      <h2>Categorias</h2>
+    </div>
+    <div class="category-container" data-aos="fade-up" data-aos-duration="1000">
+      <a href="" class="category-box">
+        <img src="images/Category.png" alt="" />
+        <span>Dulces</span>
+      </a>
+      <a href="" class="category-box">
+        <img src="images/Category.png" alt="" />
+        <span>Cítricos</span>
+      </a>
+      <a href="" class="category-box">
+        <img src="images/Category.png" alt="" />
+        <span>Detox</span>
+      </a>
+      <a href="" class="category-box">
+        <img src="images/Category.png" alt="" />
+        <span>Dulce y Ácido</span>
+      </a>
 
-    <!------------------- PRODUCTOS ------------------->
-    <section id="paquetes">
-      <!-- PRODUCTO 1 -->
-      <div class="title">
-        <h2>Productos</h2>
-      </div>
-      <div class="product-container"> <!-- PRODUCT-CONTAINER -->
-        <div class="container">
-          <div class="element">
-            <div class="front">
-              <img src="/images/productos/batido-1.png" alt="">
-            </div>
-            <div class="back">
-              <div class="back-content">
-                <div class="description">
-                 <strong>Ingredientes:</strong> 
-                 <br>
-                 Agua, Limón, Ananá, Jengibre, Menta
-                </div>
+
+    </div>
+  </section>
+  <!------------------- Categorias Fin------------------->
+
+
+  <!------------------- PRODUCTOS ------------------->
+  <section id="paquetes">
+    <!-- PRODUCTO 1 -->
+    <div class="title" data-aos="fade-right">
+      <h2>Productos</h2>
+    </div>
+    <div class="product-container" data-aos="fade-up" data-aos-duration="2000">
+      <!-- PRODUCT-CONTAINER -->
+      <div class="container">
+        <div class="element">
+          <div class="front">
+            <img src="/images/productos/batido-1.png" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content">
+              <div class="description">
+                <strong>Ingredientes:</strong>
+                <br>
+                Agua, Limón, Ananá, Jengibre, Menta
               </div>
             </div>
           </div>
+        </div>
         <div class="price-name">
-              <strong>Batido Cítrico</strong>
-            <span class="quantity">500ml</span>
-            <span class="price">$2100</span>
-            <a href="" class="carrito">
-              <ion-icon name="cart-outline"></ion-icon>Add To Cart
-            </a>
-            <a href="" class="megusta">
-              <ion-icon name="heart-outline"></ion-icon>
-            </a>
-            </div>
-          </div>
-     
-      
+          <strong>Batido Cítrico</strong>
+          <span class="quantity">500ml</span>
+          <span class="price">$2100</span>
+          <a href="" class="carrito">
+            <ion-icon name="cart-outline"></ion-icon>Add To Cart
+          </a>
+          <a href="" class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
 
-        <!-- PRODUCTO 2 -->
+
+
+      <!-- PRODUCTO 2 -->
 
       <div class="container">
         <div class="element">
@@ -146,15 +143,15 @@
           <div class="back">
             <div class="back-content">
               <div class="description">
-               <strong>Ingredientes:</strong> 
-               <br>
-               Leche, Frutilla, Almendras, Chia, Arandanos 
+                <strong>Ingredientes:</strong>
+                <br>
+                Leche, Frutilla, Almendras, Chia, Arandanos
               </div>
             </div>
           </div>
         </div>
-	    <div class="price-name">
-            <strong>Batido Frutilla</strong>
+        <div class="price-name">
+          <strong>Batido Frutilla</strong>
           <span class="quantity">500ml</span>
           <span class="price">$2100</span>
           <a href="" class="carrito">
@@ -163,9 +160,9 @@
           <a href="" class="megusta">
             <ion-icon name="heart-outline"></ion-icon>
           </a>
-          </div>
         </div>
-        <!-- PRODUCTO 3 -->
+      </div>
+      <!-- PRODUCTO 3 -->
       <div class="container">
         <div class="element">
           <div class="front">
@@ -174,15 +171,15 @@
           <div class="back">
             <div class="back-content">
               <div class="description">
-               <strong>Ingredientes:</strong> 
-               <br>
-               Leche, Almendras, Canela, Zapallo, Naranja
+                <strong>Ingredientes:</strong>
+                <br>
+                Leche, Almendras, Canela, Zapallo, Naranja
               </div>
             </div>
           </div>
         </div>
-	    <div class="price-name">
-            <strong>Batido Naranja</strong>
+        <div class="price-name">
+          <strong>Batido Naranja</strong>
           <span class="quantity">500ml</span>
           <span class="price">$2100</span>
           <a href="" class="carrito">
@@ -191,9 +188,9 @@
           <a href="" class="megusta">
             <ion-icon name="heart-outline"></ion-icon>
           </a>
-          </div>
         </div>
-        <!-- PRODUCTO 4 -->
+      </div>
+      <!-- PRODUCTO 4 -->
       <div class="container">
         <div class="element">
           <div class="front">
@@ -202,15 +199,15 @@
           <div class="back">
             <div class="back-content">
               <div class="description">
-               <strong>Ingredientes:</strong> 
-               <br>
-               Agua, Pepino, Manzana Verde
+                <strong>Ingredientes:</strong>
+                <br>
+                Agua, Pepino, Manzana Verde
               </div>
             </div>
           </div>
         </div>
-	    <div class="price-name">
-            <strong>Batido Verde</strong>
+        <div class="price-name">
+          <strong>Batido Verde</strong>
           <span class="quantity">500ml</span>
           <span class="price">$2100</span>
           <a href="" class="carrito">
@@ -219,9 +216,9 @@
           <a href="" class="megusta">
             <ion-icon name="heart-outline"></ion-icon>
           </a>
-          </div>
         </div>
-        <!-- PRODUCTO 5 -->
+      </div>
+      <!-- PRODUCTO 5 -->
       <div class="container">
         <div class="element">
           <div class="front">
@@ -230,15 +227,15 @@
           <div class="back">
             <div class="back-content">
               <div class="description">
-               <strong>Ingredientes:</strong> 
-               <br>
-               Agua, Naranja, Lima, Chia
+                <strong>Ingredientes:</strong>
+                <br>
+                Agua, Naranja, Lima, Chia
               </div>
             </div>
           </div>
         </div>
-	    <div class="price-name">
-            <strong>Batido Naranja</strong>
+        <div class="price-name">
+          <strong>Batido Naranja</strong>
           <span class="quantity">500ml</span>
           <span class="price">$2100</span>
           <a href="" class="carrito">
@@ -247,9 +244,9 @@
           <a href="" class="megusta">
             <ion-icon name="heart-outline"></ion-icon>
           </a>
-          </div>
         </div>
-        <!-- PRODUCTO 6 -->
+      </div>
+      <!-- PRODUCTO 6 -->
       <div class="container">
         <div class="element">
           <div class="front">
@@ -258,15 +255,15 @@
           <div class="back">
             <div class="back-content">
               <div class="description">
-               <strong>Ingredientes:</strong> 
-               <br>
-               Agua, Ananá, Remolacha,Jengibre
+                <strong>Ingredientes:</strong>
+                <br>
+                Agua, Ananá, Remolacha,Jengibre
               </div>
             </div>
           </div>
         </div>
-	    <div class="price-name">
-            <strong>Pack Grande</strong>
+        <div class="price-name">
+          <strong>Pack Grande</strong>
           <span class="quantity">5 KG</span>
           <span class="price">$2100</span>
           <a href="" class="carrito">
@@ -275,104 +272,111 @@
           <a href="" class="megusta">
             <ion-icon name="heart-outline"></ion-icon>
           </a>
-          </div>
-        </div>
-      </div> <!-- FIN PRODUCTO-CONTAINER -->
-    </section>
-
-    <!--Marcas Seccion-->
-
-    <section id="marcas">
-      <div class="title-princ">
-        <h3>Nuestras Marcas</h3>
-      </div>
-
-      <div class="logo-cont">
-        <img src="images/logo-1.png" alt="" />
-        <img src="images/logo-2.png" alt="" />
-        <img src="images/logo-3.jpg" alt="" />
-        <img src="images/logo-4.png" alt="" />
-        <img src="images/logo-5.png" alt="" />
-      </div>
-    </section>
-    <!--Marcas Seccion fin-->
-
-    <!--APP Seccion-->
-
-    <section id="app">
-      <div class="app-image">
-        <img src="images/app-img.png" alt="" />
-      </div>
-      <div class="app-texto">
-        <strong>Descargar App</strong>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-          corporis consequuntur labore magni odio, nam ipsa autem praesentium
-          eligendi, nobis nihil id incidunt vero porro eos veritatis minima a
-          blanditiis.
-        </p>
-        <div class="botones">
-          <a href="#"><img src="images/googleplay-btn.png" alt="" /></a>
-          <a href="#"><img src="images/appstore-btn.png" alt="" /></a>
         </div>
       </div>
-    </section>
+    </div> <!-- FIN PRODUCTO-CONTAINER -->
+  </section>
 
-    <!--APP Seccion fin-->
+  <!--Marcas Seccion-->
 
-    <!--Footer-->
-    <footer>
-      <div class="footer-cont">
-        <div class="footer-logo">
-          <a href="#"><span>o</span>Fruit</a>
+  <section id="marcas">
+    <div class="title-princ">
+      <h3>Nuestras Marcas</h3>
+    </div>
 
-          <!--Redes-->
-          <div class="footer-redes">
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-          </div>
-        </div>
+    <div class="logo-cont" data-aos="fade-right">
+      <img src="images/logo-1.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" />
+      <img src="images/logo-2.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" />
+      <img src="images/logo-3.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" />
+      <img src="images/logo-4.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" />
+      <img src="images/logo-5.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" />
+    </div>
+  </section>
+  <!--Marcas Seccion fin-->
 
-        <!--Nav-->
-        <div class="footer-nav">
-          <strong>Productos</strong>
-          <ul>
-            <li><a href="#">Nuevos</a></li>
-            <li><a href="#">Populares</a></li>
-            <li><a href="#">Paquetes</a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
+  <!--APP Seccion-->
 
-        <div class="footer-nav">
-          <strong>Categorias</strong>
-          <ul>
-            <li><a href="#">Dulces</a></li>
-            <li><a href="#">Detox</a></li>
-            <li><a href="#">Cítricos</a></li>
-            <li><a href="#">Dulce y ácido</a></li>
-          </ul>
-        </div>
+  <section id="app">
+    <div class="app-image" data-aos="zoom-in">
+      <img src="images/app-img.png" alt="" />
+    </div>
+    <div class="app-texto" data-aos="fade-up" data-aos-duration="1000">
+      <strong>Descargar App</strong>
+      <p data-aos="fade-up" data-aos-duration="1000">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+        corporis consequuntur labore magni odio, nam ipsa autem praesentium
+        eligendi, nobis nihil id incidunt vero porro eos veritatis minima a
+        blanditiis.
+      </p>
+      <div class="botones">
+        <a href="#"><img src="images/googleplay-btn.png" alt="" /></a>
+        <a href="#"><img src="images/appstore-btn.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
 
-        <div class="footer-nav">
-          <strong>Contacto</strong>
-          <ul>
-            <li><a href="#">WhatsApp : +123456789</a></li>
-            <li><a href="#">Mail : ejemplo@hotmail.com</a></li>
-          </ul>
+  <!--APP Seccion fin-->
+
+  <!--Footer-->
+  <footer>
+    <div class="footer-cont">
+      <div class="footer-logo">
+        <a href="#"><span>o</span>Fruit</a>
+
+        <!--Redes-->
+        <div class="footer-redes">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
         </div>
       </div>
-    </footer>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <!--Nav-->
+      <div class="footer-nav">
+        <strong>Productos</strong>
+        <ul>
+          <li><a href="#">Nuevos</a></li>
+          <li><a href="#">Populares</a></li>
+          <li><a href="#">Paquetes</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <strong>Categorias</strong>
+        <ul>
+          <li><a href="#">Dulces</a></li>
+          <li><a href="#">Detox</a></li>
+          <li><a href="#">Cítricos</a></li>
+          <li><a href="#">Dulce y ácido</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <strong>Contacto</strong>
+        <ul>
+          <li><a href="#">WhatsApp : +123456789</a></li>
+          <li><a href="#">Mail : ejemplo@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+ <!--  <script src="/js/scroll.js"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <!--  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script>
+    AOS.init();
+  </script> -->
+</body>
+
 </html>
